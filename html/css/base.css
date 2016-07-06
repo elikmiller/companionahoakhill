@@ -10,7 +10,7 @@ body {
 	font-family: 'Lilita One', cursive;
 	color: #FFFFFF;
 	text-shadow: 1px 1px 0px #000000;
-	height: 400px;
+	height: 24em;
 	background-size: cover;
 }
 
@@ -22,4 +22,13 @@ body {
 #jumbotron-our-services {
 	background-image: url("../img/jumbotron_2.jpg");
 	background-position: 50% 40%;
+}
+
+#jumbotron-our-staff {
+	background-image: url("../img/jumbotron_3.jpg");
+	background-position: 50% 50%;
+}
+
+.staff {
+	margin-bottom: 2em;
 }
