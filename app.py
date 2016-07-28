@@ -1,7 +1,5 @@
-# import the Flask class from the flask module
 from flask import Flask, render_template
 
-# create the application object
 app = Flask(__name__)
 
 @app.route('/')
@@ -20,6 +18,5 @@ def our_staff():
 def contact_us():
 	return render_template('contact_us.html')
 
-# start the server
 if __name__ == '__main__':
 	app.run(debug=True)
