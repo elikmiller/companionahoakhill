@@ -1,2 +1,4 @@
 .virtualenv
-*.wsgio
+*.wsgi
+__pycache__
+*.pyc
