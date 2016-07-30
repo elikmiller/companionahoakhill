@@ -1,24 +1,30 @@
 {% extends "base.html" %}
 
 {% block title %}
-	Home
+	About Us
 {% endblock %}
 
 {% block jumbotron %}
-	<h2>&emsp;Welcome to</h2>
-	<h1>Companion Animal Hospital</h1>
-{% endblock %}
-
-{% block content_title %}
-	About Us
+	<h3>About Us</h3>
+	<div class="row">
+		<div class="col-sm-12">
+			<ul class="nav nav-pills nav-justified">
+				<li><a href="/">New Clients</a></li>
+				<li><a href="our_services">Our Services</a></li>
+				<li><a href="our_staff">Our Staff</a></li>
+				<li><a href="http://companionanimalhospital25.vetsourcecms.com/" target="_blank">Our Store</a></li>
+				<li><a href="contact_us">Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
 {% endblock %}
 
 {% block content_body %}
 	<div class="row">
-		<div class="col-sm-4 vertical-center">
+		<div class="col-sm-4">
 			<img class="center-block img-responsive" src="static/img/pet2.jpg">
 		</div>
-		<div class="col-sm-8 vertical-center">
+		<div class="col-sm-8">
 			<p>We are a full-service veterinary medical facility, located in Austin, Texas. Everyone at Companion Animal Hospital seeks to provide the best possible medical, surgical and dental care for our highly-valued patients.</p>
 			<p>We are committed to promoting responsible pet ownership, preventative health care and health-related educational opportunities for our clients. Not only does Companion Animal Hospital strive to offer excellence in veterinary care, but we also strive to differentiate ourselves by providing our clientele with a holistic approach to medicinal practice.</p>
 			<p>Please take a moment to contact us today to learn more about our veterinary practice and to find out more information about how Companion Animal Hospital can serve the needs of you and your cherished pet.</p>
@@ -38,5 +44,4 @@
 		  <footer>Ted Smith</footer>
 		</blockquote>
 	</div>
-	<p class="lead text-center"><a href="https://www.facebook.com/CompanionAHOakHill" target="_blank">Like us on Facebook!</a></p>
 {% endblock %}
