@@ -2,111 +2,193 @@ body {
 	padding-top: 40px;
 }
 
+/* Navbar */
 #navbar {
-  min-height: 0px;
+  position: fixed;
+  top: 0;
+  width: 100%;
   background-color: #8A85E3;
+  z-index: 1;
+
+	color: white;
+	text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.3);
+}
+
+#navbar .navbar-collapse {
+  background: none;
+  padding: 0;
+}
+
+#navbar .navbar-collapse > ul > li {
+  background: none;
+  margin: 0;
+}
+
+#navbar .navbar-collapse > ul > li > a {
+  background: none;
+  border-radius: 0px;
+  margin: 0px;
+}
+
+#navbar .navbar-collapse > ul > li > a:hover {
+  background: none;
+	color: #EBFC82;
+}
+
+
+#navbar .navbar-collapse > ul > li > a:focus {
+  background: none;
+  outline-style: none;
+  box-shadow: none;
+	color: #EBFC82;
+}
+
+#navbar .navbar-toggle {
+  border-radius: 0px;
+  margin: 0px;
+}
+
+#navbar .navbar-toggle:hover {
+  background: none;
 }
 
 #navbar a {
-  font-family: 'McLaren', sans-serif;
-  color: white;
-  text-shadow: -1px 1px 0px rgba(0, 0, 0, 1);
-  font-size: 1.2em;
+	font-family: 'McLaren', sans-serif;
+	color: white;
+	font-size: 1.2em;
+	text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.3);
 }
 
+/* Banner */
 #banner.jumbotron {
-  padding: 0px;
-  margin: 0px;
-  background-color: #645DD5;
+	padding: 0px;
+	margin: 0px;
+	background-color: #645DD5;
 }
 
 #banner.jumbotron h1 {
-  font-family: 'Lilita One', sans-serif;
-  font-size: 8em;
-  text-shadow: -1px 1px 1px rgba(0, 0, 0, 1);
-  color: white;
-  margin: 0px;
+	font-family: 'Lilita One', sans-serif;
+	font-size: 8em;
+	text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.3);
+	color: white;
+	margin: 0px;
 }
 
 #banner.jumbotron h1::first-letter { 
-    font-size: 120%;
+	font-size: 1.2em;
 }
 
 #banner.jumbotron h2 {
-  font-family: 'McLaren', sans-serif;
-  font-size: 3em;
-  text-shadow: -1px 1px 1px rgba(0, 0, 0, 1);
-  letter-spacing: 1px;
-  color: #EBFC82;
-  margin: 0px;
+	font-family: 'McLaren', sans-serif;
+	font-size: 3em;
+	text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.3);
+	letter-spacing: 1px;
+	color: #EBFC82;
+	margin: 0px;
 }
 
+/* Sub-Banner */
 #sub-banner {
-  background-color: #8A85E3;
-  font-family: 'McLaren', sans-serif;
-  font-size: 2em;
-  color: white;
-  text-shadow: -1px 1px 0px rgba(0, 0, 0, 1);
-  padding-top: 12px;
-  padding-bottom: 12px;
+	background-color: #8A85E3;
+	padding-top: 12px;
+	padding-bottom: 12px;
 }
 
-#content_head.jumbotron {
-  background-color: rgb(180, 200, 255);
-  background-image: url('../img/pet2.jpg');
-  font-family: 'McLaren', sans-serif;
-  color: white;
-  text-shadow: -1px 1px 0px rgba(0, 0, 0, 1);
-  border-bottom: 12px solid rgba(153, 255, 153, 1);
+#sub-banner p {
+	font-family: 'McLaren', sans-serif;
+	text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.3);
+	font-size: 1.5em;
+	color: white;
+	margin: 0px;
 }
 
-#banner.jumbotron #dog {
+/* Footer */
+#footer {
+	background-color: #48D397;
+	color: white;
 }
 
-.facebook {
-  color: white;
-  background-color: #3B5998;
-  padding: 12px;
+#footer .social-media {
+	text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.3);
 }
 
-#footer .row.social-media {
+#footer .social-media .facebook {
+	background-color: #3B5998;
+	padding: 12px;
 }
 
-#footer .row.contact-info {
-  display: flex;
-  height: 200px;
+#footer .social-media .yelp {
+	background-color: #c41200;
+	padding: 12px;
 }
 
-#footer .row.legal {
+#footer .social-media .email {
+	background-color: black;
+	padding: 12px;
+}
+
+#footer .social-media .facebook p,
+#footer .social-media .yelp p,
+#footer .social-media .email p {
+	margin: 0px;
+	font-family: 'McLaren', sans-serif;
+	font-size: 1.5em;
+	color: white;
+}
+
+#footer .contact-info {
+	display: flex;
+	min-height: 240px;
+	text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.3);
+}
+
+#footer .contact-info .map {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#footer .contact-info p {
+	font-size: 1.1em;
+}
+
+#footer .contact-info p.lead {
+	padding: 12px;
+	margin: 0px;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+#footer .legal {
+	text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.3);
+	padding-top: 12px;
+	padding-bottom: 12px;
+	background-color: #008F52;
+}
+
+#footer .legal p {
+	margin: 0px;
+	color: white;
+}
+
+#footer .legal a {
+	color: white;
+	text-decoration: underline;
 }
 
 
-
-.facebook p,
-.yelp p,
-.email p{
-  margin: 0px;
-}
-
-.yelp {
-  color: white;
-  background-color: #c41200;
-  padding: 12px;
-}
-
-.email {
-  color: white;
-  background-color: black;
-  padding: 12px;
-}
 
 .flexible-container {
-  height: 200px;
+	overflow: hidden;
+	position: relative;
+	height: 240px;
 }
 
 .flexible-container iframe {
-  width: 100%;
-  height: 100%;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
 }
 
 #navbar {
@@ -122,36 +204,56 @@ blockquote {
 	font-size: 14px;
 }
 
-#footer {
-  background-color: white;
-}
 
-@media(max-width: 767px) {
-  body {
-    margin-top: 50px;
-  }
-	.navbar-text {
-		margin-top: 10px;
-		margin-bottom: 10px;
-    margin-left: 15px;
-	}
-}
 
 #content_head {
-  height: 300px;
-  background-image: url('../img/photo5.jpg');
-  background-position: center;
-  background-size: cover;
+	height: 300px;
+	background-image: url('../img/photo5.jpg');
+	background-position: center;
+	background-size: cover;
 }
 
 #content_head h3 {
-  font-family: 'Lilita One', sans-serif;
-  font-size: 4em;
-  color: white;
-  text-shadow: -1px 1px 0px rgba(0, 0, 0, 1);
+	font-family: 'Lilita One', sans-serif;
+	font-size: 4em;
+	color: white;
+	text-shadow: -1px 1px 0px rgba(0, 0, 0, 1);
 }
 
 #content_head ul {
-  position: relative;
-  top: 168px;
+	position: relative;
+	top: 168px;
+}
+
+@media(max-width: 767px) {
+	body {
+	}
+
+	#navbar button {
+	}
+
+	#navbar a {
+	}
+
+	#banner.jumbotron h1 {
+		font-size: 3em;
+	}
+
+	#banner.jumbotron h2 {
+		font-size: 1.5em;
+	}
+
+	#sub-banner p {
+		font-size: 1em;
+	}
+
+	#footer .social-media .facebook p,
+	#footer .social-media .yelp p,
+	#footer .social-media .email p {
+		font-size: 1em;
+	}
+
+	#footer .contact-info {
+		display: inherit;
+	}
 }
