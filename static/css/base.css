@@ -1,3 +1,5 @@
+/* http://paletton.com/#uid=5330+0kpXENfxPpl4J-wGB3-wqe */
+
 body {
 	padding-top: 40px;
 }
@@ -7,11 +9,11 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #8A85E3;
+  background-color: #7CA9DF;
   z-index: 1;
-
 	color: white;
-	text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.3);
+	text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
+	border-bottom: 4px solid #528BCF;
 }
 
 #navbar .navbar-collapse {
@@ -53,50 +55,57 @@ body {
 }
 
 #navbar a {
-	font-family: 'McLaren', sans-serif;
 	color: white;
 	font-size: 1.2em;
-	text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.3);
+	text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 /* Banner */
 #banner.jumbotron {
+	display: flex;
 	padding: 0px;
 	margin: 0px;
-	background-color: #645DD5;
+	background-color: #3274C2;
+	background-image: url('../img/photo7.jpg');
+	background-size: cover;
+	background-position: center;
 }
 
 #banner.jumbotron h1 {
 	font-family: 'Lilita One', sans-serif;
 	font-size: 8em;
-	text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.3);
+	text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
 	color: white;
 	margin: 0px;
-}
 
-#banner.jumbotron h1::first-letter { 
-	font-size: 1.2em;
+		margin-top: 12px;
 }
 
 #banner.jumbotron h2 {
-	font-family: 'McLaren', sans-serif;
+	font-family: 'Fredoka One', sans-serif;
 	font-size: 3em;
-	text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.3);
-	letter-spacing: 1px;
-	color: #EBFC82;
-	margin: 0px;
+	letter-spacing: 2px;
+	text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
+	box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
+	background-color: #de1e1e;
+	border-radius: 200px;
+	border: 0px solid white;
+	color: white;
+	margin: 0px 0px 12px 0px;
+	padding: 0.2em;
 }
 
 /* Sub-Banner */
 #sub-banner {
-	background-color: #8A85E3;
+	background-color: #7CA9DF;
 	padding-top: 12px;
 	padding-bottom: 12px;
+	border-top: 4px solid #528BCF;
+	border-bottom: 4px solid #528BCF;
 }
 
 #sub-banner p {
-	font-family: 'McLaren', sans-serif;
-	text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.3);
+	text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
 	font-size: 1.5em;
 	color: white;
 	margin: 0px;
@@ -104,12 +113,12 @@ body {
 
 /* Footer */
 #footer {
-	background-color: #48D397;
+	background-color: #26C782;
 	color: white;
 }
 
 #footer .social-media {
-	text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.3);
+	text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 #footer .social-media .facebook {
@@ -123,7 +132,7 @@ body {
 }
 
 #footer .social-media .email {
-	background-color: black;
+	background-color: #74E2B3;
 	padding: 12px;
 }
 
@@ -131,7 +140,6 @@ body {
 #footer .social-media .yelp p,
 #footer .social-media .email p {
 	margin: 0px;
-	font-family: 'McLaren', sans-serif;
 	font-size: 1.5em;
 	color: white;
 }
@@ -139,12 +147,11 @@ body {
 #footer .contact-info {
 	display: flex;
 	min-height: 240px;
-	text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.3);
+	text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 #footer .contact-info .map {
-	padding-left: 0px;
-	padding-right: 0px;
+	padding: 0px;
 }
 
 #footer .contact-info p {
@@ -159,7 +166,7 @@ body {
 }
 
 #footer .legal {
-	text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.3);
+	text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
 	padding-top: 12px;
 	padding-bottom: 12px;
 	background-color: #008F52;
@@ -217,7 +224,7 @@ blockquote {
 	font-family: 'Lilita One', sans-serif;
 	font-size: 4em;
 	color: white;
-	text-shadow: -1px 1px 0px rgba(0, 0, 0, 1);
+	text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 #content_head ul {
@@ -233,6 +240,10 @@ blockquote {
 	}
 
 	#navbar a {
+	}
+
+	#banner.jumbotron {
+		background-image: none;
 	}
 
 	#banner.jumbotron h1 {
