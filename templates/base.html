@@ -19,7 +19,6 @@
 </head>
 
 <body>
-	<!-- Navbar -->
 	<nav id="navbar" class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
@@ -43,142 +42,82 @@
 	</nav>
 
 	<!-- Banner -->
-	<div id="splash" class="jumbotron">
+	<div id="banner" class="jumbotron">
 		<div class="container-fluid">
-			<div class="row header">
+			<div class="row">
 				<div class="col-xs-12">
 					<h1 class="text-center">COMPANION</h1>
 				</div>
 			</div>
-			<div class="row subheader">
+			<div class="row">
 				<div class="col-xs-12">
 					<h2 class="text-center">Animal&nbsp;Hospital</h2>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-xs-12">
-					<img id="dog" class="center-block" src="static/img/header_dog.png">
+					<img class="center-block" src="static/img/header_dog.png">
 				</div>
 			</div class>
-			<div class="row quick-info">
-				<div class="col-xs-5">
-					<p class="text-center">Austin, TX</p>
-				</div>
-				<div class="col-xs-offset-2 col-xs-5">
-					<p class="text-center">(512) 288-2713</p>
-				</div>
+		</div>
+	</div>
+	<div id="sub-banner" class="container-fluid">
+		<div class="row text-center quick-info">
+			<div class="col-xs-5">
+				Austin, TX
+			</div>
+			<div class="col-xs-offset-2 col-xs-5">
+				(512) 288-2713
 			</div>
 		</div>
 	</div>
 
 	<!-- Content Head -->
-	<div id="content_head" class="container hidden-xs">	
-		{% block jumbotron %}{% endblock %}
+	<div id="content_head" class="container-fluid">
+		{% block content_head %}{% endblock %}
 	</div>
 
 	<!-- Content Body -->
 	<div id="content" class="container">
-		<div class="row">
-			<div class="col-xs-12">
-				{% block content_body %}{% endblock %}
-			</div>
-		</div>
+		{% block content_body %}{% endblock %}
 	</div>
 
 	<!-- Footer -->
 	<div id="footer" class="container">
-		<div class="row">
-			<div class="col-sm-6 text-center facebook">
-				<p><i class="fa fa-facebook fa-3x" aria-hidden="true"></i></p>
-				We're on Facebook!
+		<div class="row social-media text-center">
+			<div class="col-sm-4 facebook">
+				<i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
 			</div>
-			<div class="col-sm-6 text-center yelp">
-				<p><i class="fa fa-yelp fa-3x" aria-hidden="true"></i></p>
-				Check our reviews on Yelp!
+			<div class="col-sm-4 yelp">
+				<i class="fa fa-yelp fa-3x" aria-hidden="true"></i>
+			</div>
+			<div class="col-sm-4 email">
+				<i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
 			</div>
 		</div>
-	</div>
-	<div id="footer" class="container-fluid">
-		<div class="row">
-		  <div class="col-sm-4 text-center">
-		    <p><strong>Companion Animal Hospital</strong></p>
-				<p>7132 Hwy 71 West<br>Austin, TX 78735</p>
+		<div class="row contact-info">
+		  <div class="col-sm-3 text-center">
+		  	<p><strong>Clinic Information</strong></p>
+  			<p>7132 TX-71 West<br>Austin, TX 78735</p>
 				<p>Phone: (512) 288-2713<br>Fax: (469) 547-0800</p>
-				<p><i class="fa fa-exclamation-circle fa-2x" aria-hidden="true"></i></p>
-				<p><strong>After Hours Emergency Care</strong></p>
-				<p>(512) 899-0955</p>
+				<p>After Hours Emergency Care<br>(512) 899-0955</p>
 		  </div>
-			<div class="col-sm-4">
+		  <div class="col-sm-6 map">
 		    <div class="flexible-container center-block">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.0387092617693!2d-97.87901468553198!3d30.23597261645552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865b497c847f901f%3A0xf84f100ca8137140!2sCompanion+Animal+Hospital!5e0!3m2!1sen!2sus!4v1469655236852" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
 		  </div>
-		  <div class="col-sm-3 text-center">
-		    <p><strong>Hours of Operation</strong></p>
-		    <div class="row">
-		    	<div class="col-xs-6">
-		    		Monday
-		    	</div>
-		    	<div class="col-xs-6">
-		    		7AM&nbsp;-&nbsp;6PM
-		    	</div>
-		    </div>
-		    <div class="row">
-		    	<div class="col-xs-6">
-		    		Tuesday
-		    	</div>
-		    	<div class="col-xs-6">
-		    		7AM&nbsp;-&nbsp;6PM
-		    	</div>
-		    </div>
-		    <div class="row">
-		    	<div class="col-xs-6">
-		    		Wednesday
-		    	</div>
-		    	<div class="col-xs-6">
-		    		7AM&nbsp;-&nbsp;6PM
-		    	</div>
-		    </div>
-		    <div class="row">
-		    	<div class="col-xs-6">
-		    		Thursday
-		    	</div>
-		    	<div class="col-xs-6">
-		    		7AM&nbsp;-&nbsp;6PM
-		    	</div>
-		    </div>
-		    <div class="row">
-		    	<div class="col-xs-6">
-		    		Friday
-		    	</div>
-		    	<div class="col-xs-6">
-		    		7AM&nbsp;-&nbsp;6PM
-		    	</div>
-		    </div>
-		    <div class="row">
-		    	<div class="col-xs-6">
-		    		Saturday
-		    	</div>
-		    	<div class="col-xs-6">
-		    		7AM&nbsp;-&nbsp;6PM
-		    	</div>
-		    </div>
-		    <div class="row">
-		    	<div class="col-xs-6">
-		    		Sunday
-		    	</div>
-		    	<div class="col-xs-6">
-		    		7AM&nbsp;-&nbsp;6PM
-		    	</div>
-		    </div>
+	  	<div class="col-sm-3 text-center">
+		  	<p><strong>Hours of Operation</strong></p>
+				<p>Mon&nbsp;-&nbsp;Fri<br>7:00am&nbsp;-&nbsp;6:00pm</p>
+		    <p>Saturday<br><em>by&nbsp;appointment</em><br>8:00am&nbsp;-&nbsp;12:00pm</p>
+		    <p>Sunday<br>Closed</p>
 		  </div>
 		</div>
-		
-		<div class="row">
-			<hr>
+		<div class="row legal">
 			<div class="col-xs-12 text-right">
-				<p>&copy; 2016 Companion Animal Hospital, All Rights Reserved</p>
-				<p>handcrafted by elikmiller.com</p>
+				<hr>
+				<p>Handcrafted by <a href="http://elikmiller.com" target="_blank">elikmiller.com</a><br>&copy; 2016 Companion Animal Hospital, All Rights Reserved</p>
 			</div>
 		</div>
 	</div>
