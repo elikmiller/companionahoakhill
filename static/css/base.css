@@ -1,7 +1,8 @@
-/* http://paletton.com/#uid=5330+0kpXENfxPpl4J-wGB3-wqe */
+/* http://paletton.com/#uid=5330-0kpXENfxPpl4J-wGB3-wqe */
 
 body {
 	padding-top: 40px;
+	background-color: #3274C2;
 }
 
 /* Navbar */
@@ -77,8 +78,7 @@ body {
 	text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
 	color: white;
 	margin: 0px;
-
-		margin-top: 12px;
+	margin-top: 12px;
 }
 
 #banner.jumbotron h2 {
@@ -113,41 +113,31 @@ body {
 
 /* Footer */
 #footer {
-	background-color: #26C782;
+	background-color: #7CA9DF;
 	color: white;
 }
 
-#footer .social-media {
-	text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
+.social-media {
+	font-size: 1.5em !important;
 }
 
-#footer .social-media .facebook {
+.facebook {
 	background-color: #3B5998;
-	padding: 12px;
 }
 
-#footer .social-media .yelp {
+.yelp {
 	background-color: #c41200;
-	padding: 12px;
 }
 
-#footer .social-media .email {
-	background-color: #74E2B3;
-	padding: 12px;
-}
-
-#footer .social-media .facebook p,
-#footer .social-media .yelp p,
-#footer .social-media .email p {
-	margin: 0px;
-	font-size: 1.5em;
-	color: white;
+.email {
+	background-color: #48D397;
 }
 
 #footer .contact-info {
 	display: flex;
 	min-height: 240px;
 	text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
+	border-top: 4px solid #528BCF;
 }
 
 #footer .contact-info .map {
@@ -169,7 +159,8 @@ body {
 	text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
 	padding-top: 12px;
 	padding-bottom: 12px;
-	background-color: #008F52;
+	background-color: #0A4489;
+	border-top: 4px solid #528BCF;
 }
 
 #footer .legal p {
@@ -211,25 +202,45 @@ blockquote {
 	font-size: 14px;
 }
 
-
-
-#content_head {
-	height: 300px;
-	background-image: url('../img/photo5.jpg');
-	background-position: center;
-	background-size: cover;
-}
-
-#content_head h3 {
-	font-family: 'Lilita One', sans-serif;
-	font-size: 4em;
+.tile {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	color: white;
 	text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
+	box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
+	margin: 1em;
+	padding: 1em;
+	min-height: 240px;
 }
 
-#content_head ul {
-	position: relative;
-	top: 168px;
+.tile p {
+	margin: 0px;
+	font-size: 1.1em;
+}
+
+.tile.tile1 {
+	background-color: #00BE6D;
+}
+
+.tile.tile2 {
+	background-color: #0A4489;
+}
+
+.tile.tile3 {
+	background-color: #7CA9DF;
+}
+
+.content-title {
+	font-family: 'Lilita One', sans-serif;
+	font-size: 3em !important;
+	text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
+	color: white;
+}
+
+.no-pad > [class*='col-'] {
+  padding-right:0;
+  padding-left:0;
 }
 
 @media(max-width: 767px) {
@@ -258,13 +269,12 @@ blockquote {
 		font-size: 1em;
 	}
 
-	#footer .social-media .facebook p,
-	#footer .social-media .yelp p,
-	#footer .social-media .email p {
-		font-size: 1em;
-	}
-
 	#footer .contact-info {
 		display: inherit;
+	}
+
+	#footer .contact-info .map {
+		border-top: 4px solid #528BCF;
+		border-bottom: 4px solid #528BCF;
 	}
 }
