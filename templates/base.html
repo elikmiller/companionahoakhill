@@ -21,6 +21,23 @@
 </head>
 
 <body>
+	<!-- Banner -->
+	<div id="banner" class="container-fluid">
+		<div class="row flex">
+			<div class="col-xs-4 text-center">
+  			<p>Austin, TX</p>
+			</div>
+			<div class="col-xs-4 text-center flex2">
+				<div>
+					<h1>COMPANION</h1>
+					<h2>Animal&nbsp;Hospital</h2>
+				</div>
+			</div>
+			<div class="col-xs-4 text-center">
+				<p>(512) 288-2713</p>
+			</div>
+		</div>
+	</div>
 	<div id="navbar" class="container-fluid">
 		<div class="row">
 			<a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -38,48 +55,13 @@
 		</div>
 	</div>
 
-	<!-- Banner -->
-	<div id="banner" class="jumbotron">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xs-12">
-					<h1 class="text-center"><em>COMPANION</em></h1>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-12">
-					<h2 class="text-center">Animal&nbsp;Hospital</h2>
-				</div>
-			</div>
-			<div class="row hidden-xs">
-				<div class="col-xs-12">
-					<img class="center-block img-responsive" src="static/img/header_dog.png">
-				</div>
-			</div class>
-		</div>
-	</div>
-	<div id="sub-banner" class="container-fluid">
-		<div class="row text-center quick-info">
-			<div class="col-xs-5">
-				<p>Austin, TX</p>
-			</div>
-			<div class="col-xs-offset-2 col-xs-5">
-				<p>(512) 288-2713</p>
-			</div>
-		</div>
-	</div>
-
-	<!-- Content Banner -->
-	<div id="content-banner" class="container-fluid">
-		{% block content_banner %}{% endblock %}
-	</div>
-
 	<!-- Content Body -->
 	<div id="content-body" class="container">
 		{% block content_body %}{% endblock %}
 	</div>
 
 	<!-- Footer -->
+	<img src="/static/img/header_dog.png" class="center-block">
 	<div id="footer" class="container-fluid">
 
 		<div class="row contact-info">
@@ -113,11 +95,6 @@
 
 	<script src="static/js/jquery-2.2.4.min.js"></script>
 	<script src="static/js/bootstrap.min.js"></script>
-	<script src="static/js/headroom.min.js"></script>
-	<script>
-		var headroom = new Headroom(document.querySelector("#navbar"), {"tolerance": 10});
-		headroom.init(); 
-	</script>
 	{% block scripts %}{% endblock %}
 </body>
 </html>

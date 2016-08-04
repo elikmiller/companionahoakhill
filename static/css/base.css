@@ -1,14 +1,11 @@
 /* http://paletton.com/#uid=5330-0kpXENfxPpl4J-wGB3-wqe */
 
 body {
-	padding-top: 40px;
 	background-color: #3274C2;
 }
 
 /* Navbar */
 #navbar {
-  position: fixed;
-  top: 0;
   width: 100%;
   background-color: #7CA9DF;
   z-index: 1;
@@ -38,7 +35,6 @@ body {
 	color: #EBFC82;
 }
 
-
 #navbar .navbar-collapse > ul > li > a:focus {
   background: none;
   outline-style: none;
@@ -57,31 +53,42 @@ body {
 
 #navbar a {
 	color: white;
-	font-size: 1.2em;
+	font-size: 1em;
 	text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 /* Banner */
-#banner.jumbotron {
+.flex {
 	display: flex;
-	padding: 0px;
-	margin: 0px;
+	flex-direction: row;
+	align-items: flex-end;
+}
+
+.flex2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#banner {
 	background-color: #3274C2;
 	background-image: url('../img/photo7.jpg');
 	background-size: cover;
 	background-position: center;
+	border-bottom: 4px solid #528BCF;
 }
 
-#banner.jumbotron h1 {
+#banner h1 {
 	font-family: 'Lilita One', sans-serif;
-	font-size: 8em;
+	font-size: 6em;
 	text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
 	color: white;
 	margin: 0px;
 	margin-top: 12px;
 }
 
-#banner.jumbotron h2 {
+#banner h2 {
 	font-family: 'Fredoka One', sans-serif;
 	font-size: 3em;
 	text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
@@ -92,6 +99,16 @@ body {
 	color: white;
 	margin: 0px 0px 12px 0px;
 	padding: 0.2em;
+}
+
+#banner p {
+	font-size: 1.5em;
+	text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
+	color: white;
+}
+
+#banner.jumbotron img {
+	margin-top: -2em;
 }
 
 /* Sub-Banner */
