@@ -1,0 +1,96 @@
+.tile {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
+	box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
+	margin: 1em;
+	padding: 2em;
+	min-height: 320px;
+}
+
+.tile p {
+	margin: 0px;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+.tile.tile1 {
+	background-color: #00BE6D;
+}
+
+.tile.tile2 {
+	background-color: #0A4489;
+}
+
+.tile.tile3 {
+	background-color: #7CA9DF;
+}
+
+.tile .content-title {
+	font-family: 'Lilita One', sans-serif;
+	font-size: 4em;
+	text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
+	color: white;
+}
+
+.no-pad > [class*='col-'] {
+  padding-right:0;
+  padding-left:0;
+}
+.social-media {
+	font-size: 1.5em !important;;
+}
+
+.facebook {
+	background-color: #3B5998;
+}
+
+.yelp {
+	background-color: #c41200;
+}
+
+.email {
+	background-color: #48D397;
+}
+
+.picture-tile {
+	background-size: cover;
+	background-position: center;
+}
+
+#picture1 {
+	background-image: url('../img/vet1.jpg');
+}
+
+#picture2 {
+	background-image: url('../img/vet2.jpg');
+}
+
+#picture3 {
+	background-image: url('../img/vet3.jpg');
+}
+
+#picture4 {
+	background-image: url('../img/photo1.jpg');
+}
+
+#picture5 {
+	background-image: url('../img/vet5.jpg');
+}
+
+#picture6 {
+	background-image: url('../img/vet6.jpg');
+}
+
+@media(max-width: 767px) {
+	.tile {
+		min-height: 0px;
+	}
+
+	.picture-tile {
+		display: none;
+	}
+}

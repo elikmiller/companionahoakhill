@@ -84,7 +84,6 @@ body {
 #banner.jumbotron h2 {
 	font-family: 'Fredoka One', sans-serif;
 	font-size: 3em;
-	letter-spacing: 2px;
 	text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
 	box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
 	background-color: #de1e1e;
@@ -117,22 +116,6 @@ body {
 	color: white;
 }
 
-.social-media {
-	font-size: 1.5em !important;
-}
-
-.facebook {
-	background-color: #3B5998;
-}
-
-.yelp {
-	background-color: #c41200;
-}
-
-.email {
-	background-color: #48D397;
-}
-
 #footer .contact-info {
 	display: flex;
 	min-height: 240px;
@@ -142,6 +125,17 @@ body {
 
 #footer .contact-info .map {
 	padding: 0px;
+	overflow: hidden;
+	position: relative;
+	height: 240px;
+}
+
+#footer .contact-info .map iframe {
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
 }
 
 #footer .contact-info p {
@@ -173,75 +167,9 @@ body {
 	text-decoration: underline;
 }
 
-
-
-.flexible-container {
-	overflow: hidden;
-	position: relative;
-	height: 240px;
-}
-
-.flexible-container iframe {
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	position: absolute;
-}
-
-#navbar {
-}
-
-#banner {
-}
-
-#content {
-}
-
-blockquote {
-	font-size: 14px;
-}
-
-.tile {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	color: white;
-	text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
-	box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
-	margin: 1em;
-	padding: 1em;
-	min-height: 240px;
-}
-
-.tile p {
-	margin: 0px;
-	font-size: 1.1em;
-}
-
-.tile.tile1 {
-	background-color: #00BE6D;
-}
-
-.tile.tile2 {
-	background-color: #0A4489;
-}
-
-.tile.tile3 {
-	background-color: #7CA9DF;
-}
-
-.content-title {
-	font-family: 'Lilita One', sans-serif;
-	font-size: 3em !important;
-	text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
-	color: white;
-}
-
-.no-pad > [class*='col-'] {
-  padding-right:0;
-  padding-left:0;
-}
+#navbar.headroom { transition: transform 0.15s ease; }
+#navbar.headroom--pinned { transform: translateY(0%); }
+#navbar.headroom--unpinned { transform: translateY(-100%); }
 
 @media(max-width: 767px) {
 	body {
@@ -277,4 +205,8 @@ blockquote {
 		border-top: 4px solid #528BCF;
 		border-bottom: 4px solid #528BCF;
 	}
+
+  header.headroom { transition: none; }
+  header.headroom--pinned { transform: none; }
+  header.headroom--unpinned { transform: none; }
 }
