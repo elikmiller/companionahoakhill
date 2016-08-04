@@ -4,17 +4,12 @@
 	align-items: center;
 	justify-content: center;
 	color: white;
+	font-size: 1.2em;
 	text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
 	box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
-	margin: 1em;
+	margin: 0.5em;
 	padding: 2em;
-	min-height: 320px;
-}
-
-.tile p {
-	margin: 0px;
-	font-size: 1.2em;
-	text-align: center;
+	min-height: 240px;
 }
 
 .tile.tile1 {
@@ -29,17 +24,23 @@
 	background-color: #7CA9DF;
 }
 
-.tile .content-title {
+.content-title {
 	font-family: 'Lilita One', sans-serif;
-	font-size: 4em;
+	font-size: 3em;
 	text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
 	color: white;
+}
+
+.testimony-tile p {
+	padding-left: 1em;
+	border-left: 4px solid white;
 }
 
 .no-pad > [class*='col-'] {
   padding-right:0;
   padding-left:0;
 }
+
 .social-media {
 	font-size: 1.5em !important;;
 }

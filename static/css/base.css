@@ -171,7 +171,6 @@ body {
 	padding-top: 12px;
 	padding-bottom: 12px;
 	background-color: #0A4489;
-	border-top: 4px solid #528BCF;
 }
 
 #footer .legal p {
@@ -198,19 +197,19 @@ body {
 	#navbar a {
 	}
 
-	#banner.jumbotron {
+	#banner {
 		background-image: none;
 	}
 
-	#banner.jumbotron h1 {
+	#banner h1 {
 		font-size: 3em;
 	}
 
-	#banner.jumbotron h2 {
+	#banner h2 {
 		font-size: 1.5em;
 	}
 
-	#sub-banner p {
+	#banner p {
 		font-size: 1em;
 	}
 
@@ -219,8 +218,6 @@ body {
 	}
 
 	#footer .contact-info .map {
-		border-top: 4px solid #528BCF;
-		border-bottom: 4px solid #528BCF;
 	}
 
   header.headroom { transition: none; }
