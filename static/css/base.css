@@ -12,6 +12,7 @@ body {
 	color: white;
 	text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
 	border-bottom: 4px solid #528BCF;
+	box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 #navbar .navbar-collapse {
