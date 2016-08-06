@@ -81,12 +81,14 @@ body {
 }
 
 #banner h1 {
-	font-family: 'Lilita One', sans-serif;
+	font-family: 'Nunito', sans-serif;
 	font-size: 6em;
 	text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
 	color: white;
 	margin: 0px;
 	margin-top: 12px;
+	letter-spacing: -2px;
+	font-weight: bold;
 }
 
 #banner h2 {
