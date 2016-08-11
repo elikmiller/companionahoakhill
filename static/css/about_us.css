@@ -3,10 +3,10 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	color: white;
+	color: #E6E8E6;
 	font-size: 1.1em;
-	text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
-	box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
+	text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
 	margin: 0.5em;
 	padding: 1em;
 	min-height: 240px;
@@ -25,10 +25,9 @@
 }
 
 .content-title {
-	font-family: 'Lilita One', sans-serif;
 	font-size: 2.5em;
 	text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
-	color: white;
+	color: #E6E8E6;
 }
 
 .testimony p {
