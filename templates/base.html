@@ -21,82 +21,78 @@
 </head>
 
 <body>
-	<!-- Navbar -->
-	<div id="navbar" class="container-fluid">
-		<div class="row">
-			<p><a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars" aria-hidden="true"></i></a></p>
-		</div>
-		<div class="navbar-collapse collapse">
-			<ul class="nav nav-pills nav-justified">
-				<li><a href="/">Home</a></li>
-				<li><a href="our_services">Our Services</a></li>
-				<li><a href="our_staff">Our Staff</a></li>
-				<li><a href="http://companionanimalhospital25.vetsourcecms.com/" target="_blank">Our Store</a></li>
-				<li><a href="#footer">Contact Us</a></li>
-			</ul>
-		</div>
+
+	<div id="navbar">
+		<ul>
+			<li>HOME</li>
+			<li>OUR SERVICES</li>
+			<li>OUR STAFF</li>
+			<li>OUR STORE</li>
+			<li>CONTACT US</li>
+			<li>(512) 288-2713</li>
+		</ul>
 	</div>
 
-	<!-- Banner -->
 	<div id="banner" class="container-fluid">
 		<div class="row">
-			<div class="col-sm-12 text-center">
-				<h1>COMPANION</h1>
-				<h2>ANIMAL&nbsp;HOSPITAL</h2>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-12">
-				<img src="/static/img/header_dog.png" class="center-block img-responsive">
+			<div class="col-xs-12">
+				<h1 class="text-center">COMPANION</h1>
+				<h2 class="text-center">ANIMAL&nbsp;HOSPITAL</h2>
+				<img src="/static/img/header_dog_cropped.png" class="center-block img-responsive hidden-xs">
 			</div>
 		</div>
 	</div>
 
-	<div id="sub-banner" class="container-fluid">
+	<div id="tagline" class="container-fluid">
 		<div class="row">
-			<div class="col-xs-6 text-center">
-				<p>AUSTIN, TX</p>
-			</div>
-			<div class="col-xs-6 text-center">
-				<p>(512) 288-2713</p>
+			<div class="col-xs-12">
+				<p class="text-center"><em>Providers of quality veterinary care for Austin's companions since 1993!</em></p>
 			</div>
 		</div>
 	</div>
 
-	<!-- Content Body -->
-	<div id="content-body" class="container">
+	<div id="content" class="container">
 		{% block content_body %}{% endblock %}
 	</div>
 
-	<!-- Footer -->
-	<div id="footer" class="container-fluid">
+	<div id="contact-info" class="container-fluid">
 		<div class="row">
 			<div class="col-xs-12 col-sm-4 text-center">
-				<h2>CONTACT US</h2>
+				<p class="lead">CONTACT US</p>
+				<hr>
 				<p>7132 WEST TX-71<br>AUSTIN, TX 78735</p>
 				<p>PHONE: (512) 288-2713<br>FAX: (469) 547-0800</p>
-				<p class="emergency"><strong>AFTER HOURS EMERGENCY CARE</strong><br><a href="http://www.eahnwa.com/" target="_blank">EMERGENCY ANIMAL HOSPITAL</a><br>(512) 899-0955</p>
+				<p><strong>AFTER HOURS EMERGENCY CARE</strong><br><a href="http://www.eahnwa.com/" target="_blank">EMERGENCY ANIMAL HOSPITAL</a><br>(512) 899-0955</p>
 			</div>
 			<div class="col-xs-12 col-sm-4">
 			</div>
 			<div class="col-xs-12 col-sm-4 text-center">
-				<h2>CLINIC HOURS</h2>
+				<p class="lead">CLINIC HOURS</p>
+				<hr>
 				<p><strong>MON&nbsp;-&nbsp;FRI</strong><br>7:00 AM&nbsp;-&nbsp;6:00 PM</p>
 				<p><strong>SATURDAY</strong><br><em>by&nbsp;appointment</em><br>8:00 AM&nbsp;-&nbsp;12:00 PM</p>
 				<p><strong>SUNDAY</strong><br>CLOSED</p>
 			</div>
 		</div>
+	</div>
 
-		<div class="row legal">
-			<div class="col-xs-12 text-right">
-				<p>Handcrafted by <a href="http://elikmiller.com" target="_blank">elikmiller.com</a><br>&copy; 2016 Companion Animal Hospital, All Rights Reserved</p>
+	<div id="footer" class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12">
+				<p class="text-right">&copy; 2016 Companion Animal Hospital, All Rights Reserved<br>Handcrafted by <a href="http://elikmiller.com" target="_blank">elikmiller.com</a></p>
 			</div>
 		</div>
-
 	</div>
 
 	<script src="static/js/jquery-2.2.4.min.js"></script>
 	<script src="static/js/bootstrap.min.js"></script>
+	<script src="static/js/headroom.min.js"></script>
+	<script>
+		var navbar = document.querySelector("nav");
+		var headroom  = new Headroom(navbar);
+		headroom.init();
+	</script>
 	{% block scripts %}{% endblock %}
+
 </body>
 </html>

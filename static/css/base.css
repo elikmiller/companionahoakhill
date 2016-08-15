@@ -9,200 +9,124 @@ $color-1: rgba(26, 200, 237, 1);
 */
 
 body {
-	background-color: rgba(57, 64, 83, 1);
+	background-color: rgba(132, 153, 177, 1);
 	color: rgba(230, 232, 230, 1);
-}
-
-/* Navbar */
-#navbar {
 	font-family: 'Martel Sans', sans-serif;
-	text-transform: uppercase;
-  background-color: #8499B1;
-  z-index: 1;
-	border-width: 0px 0px 4px 0px;
-	border-style: solid;
-	border-color: rgba(58, 80, 107, 1);
 }
 
-#navbar p {
-  margin: 0px;
+#navbar {
+	background-color: rgba(61, 88, 119, 1);
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
 
-#navbar .navbar-collapse {
-  background: none;
-  padding: 0;
+#navbar ul {
+	margin: 0;
+	display: table;
+	width: 100%;
 }
 
-#navbar .navbar-collapse > ul > li {
-  background: none;
-  margin: 0;
+#navbar ul > li {
+	padding-left: 1rem;
+	padding-right: 1rem;
+	display: table-cell;
+	text-align: center;
 }
-
-#navbar .navbar-collapse > ul > li > a {
-  background: none;
-  border-radius: 0px;
-  margin: 0px;
-}
-
-#navbar .navbar-collapse > ul > li > a:hover {
-  background: none;
-}
-
-#navbar .navbar-collapse > ul > li > a:focus {
-  background: none;
-  outline-style: none;
-  box-shadow: none;
-}
-
-#navbar .navbar-toggle {
-  border-radius: 0px;
-  margin: 0px;
-}
-
-#navbar .navbar-toggle:hover {
-  background: none;
-}
-
-#navbar a {
-	color: #E6E8E6;
-	font-size: 1.5em;
-}
-
-/* Banner */
 
 #banner {
-	font-family: 'Martel Sans', sans-serif;
-	background-color: #394053;
-	background-size: cover;
-	background-position: center;
-	padding-top: 1em;
+	background-color: rgba(57, 64, 83, 1);
 }
+
 #banner h1 {
-	font-size: 8em;
+	font-size: 12rem;
+	letter-spacing: 0.05em;
 	font-weight: bold;
 	color: rgba(26, 200, 237, 1);
+	text-shadow: -2px 2px 0px rgba(0, 0, 0, 1);
 	margin-bottom: 0;
 }
 
 #banner h2 {
-	font-size: 4em;
-	color: #E6E8E6;
+	font-size: 6rem;
 	letter-spacing: 0.05em;
-	margin-top: -0.3em;
-	margin-bottom: -0.8em;
+	margin-top: -0.2em;
 	position: relative;
-	z-index: 3;
+	text-shadow: -2px 2px 0px rgba(0, 0, 0, 1);
+	z-index: 1;
 }
 
-#banner p {
-	font-size: 1.5em;
-	color: #E6E8E6;
+#banner img {
+	margin-top: -4em;
 }
 
-#banner.jumbotron img {
-	margin-top: -2em;
+#tagline {
+	background-color: rgba(61, 88, 119, 1);
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
 
-/* Sub-Banner */
-#sub-banner {
-	font-family: 'Martel Sans', sans-serif;
-	background-color: #8499B1;
-	padding-top: 12px;
-	padding-bottom: 12px;
-	border-width: 4px 0px 4px 0px;
-	border-style: solid;
-	border-color: rgba(58, 80, 107, 1);
-
+#tagline p {
+	font-size: 2rem;
+	margin: 0;
 }
 
-#sub-banner p {
-	font-size: 1.5em;
-	margin: 0px;
+#content {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
 
-/* Footer */
+#contact-info {
+	background-color: rgba(61, 88, 119, 1);
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+}
+
+#contact-info p.lead {
+	font-weight: normal;
+	letter-spacing: 0.05em;
+	margin-bottom: 0;
+}
+
+#contact-info hr {
+	margin: 0 0 1rem 0;
+}
+
 #footer {
-	background-color: #8499B1;
-	color: #E6E8E6;
-	border-width: 4px 0px 0px 0px;
-	border-style: solid;
-	border-color: rgba(58, 80, 107, 1);
+	background-color: rgba(57, 64, 83, 1);
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
 
-.emergency {
-	border-radius: 4px;
-	background-color: rgba(26, 200, 237, 1);
-	font-size: 125%;
+#footer p {
+	margin: 0;
 }
 
-#footer .contact-info {
-
-}
-
-#footer .contact-info p {
-	font-size: 1.3em;
-}
-
-#footer .contact-info p.lead {
-	padding: 12px;
-	margin: 0px;
-	font-size: 1.5em;
-}
-
-#footer .legal {
-	padding-top: 12px;
-	padding-bottom: 12px;
-	background-color: #394053;
-}
-
-#footer .legal p {
-	margin: 0px;
-	color: #E6E8E6;
-}
-
-#footer .legal a {
-	color: #E6E8E6;
-	text-decoration: underline;
-}
-
-#navbar.headroom { transition: transform 0.15s ease; }
-#navbar.headroom--pinned { transform: translateY(0%); }
-#navbar.headroom--unpinned { transform: translateY(-100%); }
+.headroom { transition: transform 0.25s ease; }
+.headroom--pinned { transform: translateY(0%); }
+.headroom--unpinned { transform: translateY(-100%); }
 
 @media(max-width: 767px) {
 	body {
 	}
 
-	#navbar button {
+	.navbar-text {
+		padding-top: 0;
+		padding-bottom: 0;
 	}
 
-	#navbar a {
+	.navbar-text, .navbar-link {
+		text-align: center;
 	}
 
-	#banner {
-		background-image: none;
+  .headroom {
+		transition: none;
 	}
 
-	#banner h1 {
-		font-size: 3em;
+  .headroom--pinned {
+		transform: none;
 	}
 
-	#banner h2 {
-		font-size: 1.5em;
+  .headroom--unpinned {
+		transform: none;
 	}
-
-	#banner p {
-		font-size: 1em;
-	}
-
-	#footer .contact-info {
-		display: inherit;
-	}
-
-	#footer .contact-info .map {
-	}
-
-  header.headroom { transition: none; }
-  header.headroom--pinned { transform: none; }
-  header.headroom--unpinned { transform: none; }
 }
