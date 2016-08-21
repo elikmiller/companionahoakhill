@@ -1,23 +1,29 @@
-/*
-$color1: rgba(230, 232, 230, 1);
-$color2: rgba(132, 153, 177, 1);
-$color3: rgba(61, 88, 119, 1);
-$color4: rgba(58, 80, 107, 1);
-$color5: rgba(57, 64, 83, 1);
-$color-1: rgba(26, 200, 237, 1);
-*/
-
 body {
 	background-color: rgba(132, 153, 177, 1);
 	color: rgba(230, 232, 230, 1);
 	font-family: 'Martel Sans', sans-serif;
 }
 
+a, a:link {
+	color: rgba(230, 232, 230, 1);
+	transition: color 0.15s;
+}
+
+a:hover, a:focus {
+	color: rgba(26, 200, 237, 1);
+	text-decoration: none;
+	outline: none;
+}
+
 #navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10;
 	background-color: rgba(61, 88, 119, 1);
 }
 
-#navbar ul {
+#navbar #navbar-list {
 	margin: 0;
 	display: table;
 	table-layout:fixed;
@@ -25,74 +31,61 @@ body {
 	padding: 0;
 }
 
-#navbar ul > li {
-	padding: 2rem 1rem;
+#navbar .navbar-list-item {
+	padding: 1.8rem 1rem;
 	display: table-cell;
 	text-align: center;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	white-space: nowrap;
 }
 
-#navbar ul > li.active {
-	box-shadow: 0px -4px 0px rgba(26, 200, 237, 1) inset;
-}
-
-#navbar ul > li.active a {
+#navbar .navbar-list-item.active a {
 	color: rgba(26, 200, 237, 1);
-}
-
-.nav-text {
-	font-size: 2rem;
-}
-
-.link, .link:link {
-	color: rgba(230, 232, 230, 1);
-	transition: all 0.15s;
-}
-
-.link:hover, .link:focus {
-	color: rgba(26, 200, 237, 1);
-	text-decoration: none;
-	outline: none;
-}
-
-.nav-link:visited, .nav-link:hover, .nav-link:active {
-
 }
 
 #banner {
+	padding-top: 6rem;
 	background-color: rgba(57, 64, 83, 1);
 }
 
-#banner h1 {
+#banner #banner-header {
 	font-size: 12rem;
 	letter-spacing: 0.05em;
 	font-weight: bold;
 	color: rgba(26, 200, 237, 1);
 	text-shadow: -2px 2px 0px rgba(0, 0, 0, 1);
 	margin-bottom: 0;
+	text-align: center;
+	text-transform: uppercase;
+	white-space: nowrap;
 }
 
-#banner h2 {
+#banner #banner-sub-header {
 	font-size: 6rem;
 	letter-spacing: 0.05em;
 	margin-top: -0.2em;
-	position: relative;
 	text-shadow: -2px 2px 0px rgba(0, 0, 0, 1);
-	z-index: 1;
+	text-align: center;
+	text-transform: uppercase;
+	white-space: nowrap;
 }
 
-#banner img {
+#banner #banner-image {
 	margin-top: -4em;
 }
 
-#tagline {
+.tagline {
 	background-color: rgba(61, 88, 119, 1);
-	padding-top: 2rem;
-	padding-bottom: 2rem;
+	padding-top: 1.8rem;
+	padding-bottom: 1.8rem;
+	font-size: 1.8rem;
 }
 
-#tagline p {
-	font-size: 2rem;
+.tagline .tagline-text {
 	margin: 0;
+	font-style: italic;
+	text-align: center;
 }
 
 #content {
@@ -100,25 +93,33 @@ body {
 	padding-bottom: 2rem;
 }
 
-#contact-info {
-	background-color: rgba(61, 88, 119, 1);
+#contact-information {
+	background-color: rgba(57, 64, 83, 1);
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 }
-
-#contact-info p.lead {
-	font-weight: normal;
-	font-size: 2rem;
+#contact-information .contact-information-header {
+	font-size: 1.8rem;
 	letter-spacing: 0.05em;
-	margin-bottom: 0;
+	margin-bottom: 2rem;
+}
+
+#contact-information #address {
+	text-align: center;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+#contact-information #hours {
+	text-align: center;
+	text-transform: uppercase;
+	white-space: nowrap;
 }
 
 .google-maps {
 	position: relative;
-	padding-bottom: 33%;
-	height: 0;
+	padding-bottom: 35%;
 	overflow: hidden;
-	min-height: 250px;
 }
 .google-maps iframe {
 	position: absolute;
@@ -129,7 +130,7 @@ body {
 }
 
 #footer {
-	background-color: rgba(57, 64, 83, 1);
+	background-color: rgba(61, 88, 119, 1);
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 }
@@ -146,13 +147,46 @@ body {
 	body {
 	}
 
-	.navbar-text {
-		padding-top: 0;
-		padding-bottom: 0;
+	#navbar {
+		position: relative;
+		z-index: 10;
+		background-color: rgba(61, 88, 119, 1);
 	}
 
-	.navbar-text, .navbar-link {
-		text-align: center;
+	#navbar #navbar-list {
+		display: block;
+	}
+
+	#navbar .navbar-list-item {
+		display: list-item;
+		padding: 1rem 0.5rem;
+	}
+
+	#banner {
+		padding-top: 0;
+	}
+
+	#banner h1 {
+		font-size: 4rem;
+		text-shadow: -1px 1px 0px rgba(0, 0, 0, 1);
+	}
+
+	#banner h2 {
+		font-size: 2rem;
+		text-shadow: -1px 1px 0px rgba(0, 0, 0, 1);
+	}
+
+	.tagline p {
+		font-size: 1.5rem;
+		margin: 0;
+	}
+
+	#contact-information
+
+	.google-maps {
+
+		margin-top: 2rem;
+		margin-bottom: 2rem;
 	}
 
 	.headroom {
