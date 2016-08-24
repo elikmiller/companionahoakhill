@@ -21,16 +21,29 @@
 </head>
 
 <body>
-	<div id="navbar">
-		<ul id="navbar-list">
-			<li class="navbar-list-item{% if active_page == 'home' %} active{% endif %}"><a href="{{ url_for('home') }}">Home</a></li>
-			<li class="navbar-list-item{% if active_page == 'our_services' %} active{% endif %}"><a href="{{ url_for('our_services') }}">Our Services</a></li>
-			<li class="navbar-list-item{% if active_page == 'our_staff' %} active{% endif %}"><a href="{{ url_for('our_staff') }}">Our Staff</a></li>
-			<li class="navbar-list-item"><a href="http://companionanimalhospital25.vetsourcecms.com/" target="_blank">Our Store</a></li>
-			<li class="navbar-list-item{% if active_page == 'contact_us' %} active{% endif %}"><a href="{{ url_for('contact_us') }}">Contact Us</a></li>
-			<li class="navbar-list-item">(512) 288-2713</li>
-		</ul>
-	</div>
+	<nav id="navbar" class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="{{ url_for('home') }}">Home</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="navbar-list-item{% if active_page == 'our_services' %} active{% endif %}"><a href="{{ url_for('our_services') }}">Our Services</a></li>
+					<li class="navbar-list-item{% if active_page == 'our_staff' %} active{% endif %}"><a href="{{ url_for('our_staff') }}">Our Staff</a></li>
+					<li class="navbar-list-item"><a href="http://companionanimalhospital25.vetsourcecms.com/" target="_blank">Our Store</a></li>
+					<li class="navbar-list-item{% if active_page == 'contact_us' %} active{% endif %}"><a href="{{ url_for('contact_us') }}">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 
 	<div id="banner" class="container-fluid">
 		<div class="row">
@@ -66,6 +79,7 @@
 		<div class="row">
 			<div id="address" class="col-xs-12 col-sm-3">
 				<h1 class="contact-information-header">Contact Us</h1>
+				<hr>
 				<p><a href="https://goo.gl/maps/VwvcQ66TtK12" target="_blank">7132 West TX-71<br>Austin, TX 78735</a></p>
 				<p>Phone: (512) 288-2713<br>Fax: (469) 547-0800</p>
 				<p>After Hours Emergency Care<br><a href="http://www.eahnwa.com/" target="_blank">Emergency Animal Hospital</a><br>(512) 899-0955</p>
@@ -77,6 +91,7 @@
 			</div>
 			<div id="hours" class="col-xs-12 col-sm-3">
 				<h1 class="contact-information-header">Clinic Hours</h1>
+				<hr>
 				<p>Monday to Friday<br>7:00 AM - 6:00 PM</p>
 				<p>Saturday<br><em>by appointment only</em><br>8:00 AM - 12:00 PM</p>
 				<p>Sunday<br>Closed</p>

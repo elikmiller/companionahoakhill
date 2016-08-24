@@ -16,36 +16,44 @@ a:hover, a:focus {
 }
 
 #navbar {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 10;
 	background-color: rgba(61, 88, 119, 1);
 }
 
 #navbar #navbar-list {
-	margin: 0;
-	display: table;
-	table-layout:fixed;
-	width: 100%;
-	padding: 0;
 }
 
-#navbar .navbar-list-item {
-	padding: 1.8rem 1rem;
-	display: table-cell;
-	text-align: center;
+#navbar .navbar-brand {
+	color: rgba(230, 232, 230, 1);
+
+	transition: color 0.15s;
 	font-size: 1.8rem;
 	text-transform: uppercase;
 	white-space: nowrap;
+}
+
+#navbar .navbar-list-item {
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+#navbar .navbar-list-item a {
+	color: rgba(230, 232, 230, 1);
+	transition: color 0.15s;
 }
 
 #navbar .navbar-list-item.active a {
 	color: rgba(26, 200, 237, 1);
 }
 
+#navbar .navbar-list-item a:hover, #navbar .navbar-list-item a:focus, #navbar .navbar-brand a:hover, #navbar .navbar-brand a:focus {
+	color: rgba(26, 200, 237, 1);
+	text-decoration: none;
+	outline: none;
+}
+
 #banner {
-	padding-top: 6rem;
+	padding-top: 50px;
 	background-color: rgba(57, 64, 83, 1);
 }
 
@@ -101,7 +109,13 @@ a:hover, a:focus {
 #contact-information .contact-information-header {
 	font-size: 1.8rem;
 	letter-spacing: 0.05em;
-	margin-bottom: 2rem;
+	margin: 0;
+}
+
+#contact-information hr {
+	width: 50%;
+	margin-top: 1.8rem;
+	margin-bottom: 1.8rem;
 }
 
 #contact-information #address {
@@ -145,21 +159,6 @@ a:hover, a:focus {
 
 @media(max-width: 767px) {
 	body {
-	}
-
-	#navbar {
-		position: relative;
-		z-index: 10;
-		background-color: rgba(61, 88, 119, 1);
-	}
-
-	#navbar #navbar-list {
-		display: block;
-	}
-
-	#navbar .navbar-list-item {
-		display: list-item;
-		padding: 1rem 0.5rem;
 	}
 
 	#banner {
