@@ -12,12 +12,14 @@ body {
 	color: #E6E8E6;
 }
 
-a,a:link {
+a,
+a:link {
 	color: #E6E8E6;
 	transition: color .15s;
 }
 
-a:hover,a:focus {
+a:hover,
+a:focus {
 	color: #00D4FF;
 	text-decoration: none;
 	outline: none;
@@ -65,7 +67,8 @@ a:hover,a:focus {
 }
 
 #banner {
-	padding-top: 50px;
+	padding-top: 8rem;
+	padding-bottom: 4rem;
 	background-image: url(../img/sky2.jpg);
 	background-size: cover;
 	background-position: center;
@@ -83,9 +86,6 @@ a:hover,a:focus {
 
 #banner #banner-sub-header {
 	letter-spacing: .05em;
-}
-
-#banner #banner-image {
 }
 
 .tagline {
@@ -173,13 +173,15 @@ a:hover,a:focus {
 	}
 
 	#banner {
-		background-image: none;
 	}
 
 	#banner #banner-header {
+		font-size: 5rem;
+		margin-bottom: -0.6em;
 	}
 
 	#banner #banner-sub-header {
+		font-size: 2.5rem;
 	}
 
 	.headroom {
@@ -196,10 +198,16 @@ a:hover,a:focus {
 }
 
 @media(min-width:768px) {
+	#banner {
+	}
+
 	#banner #banner-header {
+		font-size: 10rem;
+		margin-bottom: -0.5em;
 	}
 
 	#banner #banner-sub-header {
+		font-size: 5rem;
 	}
 }
 
@@ -212,5 +220,15 @@ a:hover,a:focus {
 }
 
 @media(min-width:1200px) {
+	#banner {
+	}
 
+	#banner #banner-header {
+		font-size: 14rem;
+		margin-bottom: -0.4em;
+	}
+
+	#banner #banner-sub-header {
+		font-size: 7rem;
+	}
 }
