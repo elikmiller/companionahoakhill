@@ -118,15 +118,6 @@ a:focus {
 	letter-spacing: .05em;
 }
 
-#contact-information #address {
-}
-
-#contact-information #hours {
-}
-
-#contact-information #emergency {
-}
-
 #footer {
 	padding-top: 1em;
 	padding-bottom: 1em;
@@ -152,16 +143,6 @@ a:focus {
 	transform: translateY(-105%);
 }
 
-.tile {
-	min-height: 200px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	background-color: #789CBC;
-	box-shadow: 0 1px 1px rgba(0,0,0,0.5);
-}
-
 /* ------------- */
 /* MEDIA QUERIES */
 /* ------------- */
@@ -178,10 +159,6 @@ a:focus {
 	#navbar #navbar-collapse {
 		border-color: #E6E8E6;
 	}
-
-	#banner {
-	}
-
 	#banner #banner-header {
 		font-size: 5rem;
 		margin-bottom: -0.6em;
@@ -209,9 +186,6 @@ a:focus {
 }
 
 @media(min-width:768px) {
-	#banner {
-	}
-
 	#banner #banner-header {
 		font-size: 10rem;
 		margin-bottom: -0.5em;
@@ -232,8 +206,6 @@ a:focus {
 }
 
 @media(min-width:992px) {
-	#banner {
-	}
 
 	#banner #banner-header {
 		font-size: 15rem;
