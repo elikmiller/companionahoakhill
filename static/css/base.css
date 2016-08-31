@@ -9,6 +9,7 @@
 body {
 	background-color: #4D79A0;
 	font-family: 'Open Sans',sans-serif;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 	color: #E6E8E6;
 }
 
@@ -67,8 +68,7 @@ a:focus {
 }
 
 #banner {
-	padding-top: 8rem;
-	padding-bottom: 4rem;
+	padding-top: 50px;
 	background-image: url(../img/sky2.jpg);
 	background-size: cover;
 	background-position: center;
@@ -81,7 +81,7 @@ a:focus {
 }
 
 #banner #banner-header {
-	font-family: 'Baloo Tamma',sans-serif;
+	font-family: 'Baloo Tamma', sans-serif;
 }
 
 #banner #banner-sub-header {
@@ -89,15 +89,13 @@ a:focus {
 }
 
 .tagline {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
 	font-family: 'Courgette',sans-serif;
 	background-color: #1F5687;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 	box-shadow: 0 1px 1px rgba(0,0,0,0.5);
 	position: relative;
 	z-index: 1;
-}
-
-.tagline .tagline-text {
 	text-align: center;
 }
 
@@ -107,6 +105,8 @@ a:focus {
 }
 
 #contact-information {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
 	background-color: #4D79A0;
 	position: relative;
 	z-index: 0;
@@ -128,19 +128,13 @@ a:focus {
 #contact-information #emergency {
 }
 
-#map iframe {
-	width: 100% !important;
-	height: 100% !important;
-}
-
 #footer {
+	padding-top: 1em;
+	padding-bottom: 1em;
 	background-color: #1F5687;
 	box-shadow: 0 1px 1px rgba(0,0,0,0.5);
 	position: relative;
 	z-index: 1;
-}
-
-#footer p {
 }
 
 .headroom {
@@ -184,6 +178,10 @@ a:focus {
 		font-size: 2.5rem;
 	}
 
+	.tagline {
+		font-size: 1.5rem;
+	}
+
 	.headroom {
 		transition: none;
 	}
@@ -209,26 +207,26 @@ a:focus {
 	#banner #banner-sub-header {
 		font-size: 5rem;
 	}
+
+	.tagline {
+		font-size: 2rem;
+	}
 }
 
 @media(min-width:992px) {
-	#banner #banner-header {
-	}
-
-	#banner #banner-sub-header {
-	}
-}
-
-@media(min-width:1200px) {
 	#banner {
 	}
 
 	#banner #banner-header {
-		font-size: 14rem;
+		font-size: 15rem;
 		margin-bottom: -0.4em;
 	}
 
 	#banner #banner-sub-header {
-		font-size: 7rem;
+		font-size: 7.5rem;
+	}
+
+	.tagline {
+		font-size: 2.5rem;
 	}
 }
