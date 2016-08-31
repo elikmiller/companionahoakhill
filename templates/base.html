@@ -9,9 +9,8 @@
 
 	<link href="static/css/bootstrap.min.css" rel="stylesheet">
 	<link href="static/css/base.css" rel="stylesheet">
-	<link href='https://fonts.googleapis.com/css?family=Martel+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans|Baloo+Tamma|Courgette' rel='stylesheet' type='text/css'>
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-
 	{% block styles %}{% endblock %}
 
 	<!--[if lt IE 9]>
@@ -24,17 +23,12 @@
 	<nav id="navbar" class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+					<i class="fa fa-bars fa-2x" aria-hidden="true"></i>
 				</button>
 				<a class="navbar-brand" href="{{ url_for('home') }}">Home</a>
 			</div>
-
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<div class="collapse navbar-collapse" id="navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
 					<li class="navbar-list-item{% if active_page == 'our_services' %} active{% endif %}"><a href="{{ url_for('our_services') }}">Our Services</a></li>
 					<li class="navbar-list-item{% if active_page == 'our_staff' %} active{% endif %}"><a href="{{ url_for('our_staff') }}">Our Staff</a></li>
@@ -45,20 +39,23 @@
 		</div>
 	</nav>
 
-	<div id="banner" class="container-fluid">
-		<div class="row">
-			<div class="col-xs-12">
-				<h1 id="banner-header">Companion</h1>
-				<h2 id="banner-sub-header">Animal Hospital</h2>
-				<img id="banner-image" class="center-block img-responsive hidden-xs" src="/static/img/header_dog_cropped.png">
+	<div id="banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h1 id="banner-header">Companion</h1>
+					<h2 id="banner-sub-header">Animal Hospital</h2>
+				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="container-fluid tagline">
-		<div class="row">
-			<div class="col-xs-12">
-				<p class="tagline-text">Providers of quality veterinary care for Austin's companions since 1993!</p>
+	<div class="tagline">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="tagline-text">Providers of quality veterinary care for Austin's companions since <u>1993</u>!</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -67,44 +64,45 @@
 		{% block content_body %}{% endblock %}
 	</div>
 
-	<div class="container-fluid tagline">
-		<div class="row">
-			<div class="col-xs-12">
-				<p class="tagline-text">Call for an appointment! (512) 288-2713</p>
-			</div>
-		</div>
-	</div>
-
-	<div id="contact-information" class="container-fluid">
-		<div class="row">
-			<div id="address" class="col-xs-12 col-sm-3">
-				<h1 class="contact-information-header">Contact Us</h1>
-				<hr>
-				<p><a href="https://goo.gl/maps/VwvcQ66TtK12" target="_blank">7132 West TX-71<br>Austin, TX 78735</a></p>
-				<p>Phone: (512) 288-2713<br>Fax: (469) 547-0800</p>
-				<p>After Hours Emergency Care<br><a href="http://www.eahnwa.com/" target="_blank">Emergency Animal Hospital</a><br>(512) 899-0955</p>
-			</div>
-			<div id="map" class="col-xs-12 col-sm-6">
-				<div class="google-maps">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13788.155484565998!2d-97.876826!3d30.235968!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf84f100ca8137140!2sCompanion+Animal+Hospital!5e0!3m2!1sen!2sus!4v1471373270959" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+	<img id="banner-image" class="center-block hidden-xs" src="/static/img/header_dog_cropped.png">
+	<div class="tagline">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="tagline-text">Call today for an appointment! (512)&nbsp;288&#8209;2713</div>
 				</div>
 			</div>
-			<div id="hours" class="col-xs-12 col-sm-3">
-				<h1 class="contact-information-header">Clinic Hours</h1>
-				<hr>
-				<p>Monday to Friday<br>7:00 AM - 6:00 PM</p>
-				<p>Saturday<br><em>by appointment only</em><br>8:00 AM - 12:00 PM</p>
-				<p>Sunday<br>Closed</p>
+		</div>
+	</div>
+
+	<div id="contact-information">
+		<div class="container">
+			<div class="row">
+				<div id="address" class="col-xs-12 col-sm-4">
+					<p><strong>Companion Animal Hospital</strong><br>7132 West TX-71<br>Austin, TX 78735<br><a href="https://goo.gl/maps/VwvcQ66TtK12" target="_blank">(View Map)</a></p>
+					<p>Phone: (512)&nbsp;288&#8209;2713<br>Fax: (469)&nbsp;547&#8209;0800</p>
+					<hr class="visible-xs">
+				</div>
+				<div id="hours" class="col-xs-12 col-sm-4">
+					<p><strong>Monday to Friday</strong><br>7:00 AM - 6:00 PM</p>
+					<p><strong>Saturday</strong><br><em>by appointment only</em><br>8:00 AM - 12:00 PM</p>
+					<p><strong>Sunday</strong><br>Closed</p>
+					<hr class="visible-xs">
+				</div>
+				<div id="emergency" class="col-xs-12 col-sm-4">
+					<p><i class="fa fa-exclamation-circle fa-2x" aria-hidden="true"></i><br><strong>After Hours Emergency Care</strong><br><a href="http://www.eahnwa.com/" target="_blank">Emergency Animal Hospital</a><br>(512)&nbsp;899&#8209;0955</p>
+				</div>
 			</div>
 		</div>
 	</div>
 
-	<div id="footer" class="container-fluid">
-		<div class="row">
-			<div class="col-xs-12 text-center">
-				<a href="https://www.facebook.com/CompanionAHOakHill/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a> | <a href="https://www.yelp.com/biz/companion-animal-hospital-austin" target="_blank"><i class="fa fa-yelp" aria-hidden="true"></i></a> | <a href="mailto:admin@companionahoakhill.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></p>
-				<p>&copy; 2016 Companion Animal Hospital, All Rights Reserved</p>
-				<p>Handcrafted by <a href="http://elikmiller.com" target="_blank">elikmiller.com</a></p>
+	<div id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 text-right">
+					<div>&copy; 2016 Companion Animal Hospital, All Rights Reserved</div>
+					<div>Website by <a href="http://elikmiller.com" target="_blank">elikmiller.com</a></div>
+				</div>
 			</div>
 		</div>
 	</div>
