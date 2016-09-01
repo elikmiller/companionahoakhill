@@ -150,6 +150,7 @@ a:focus {
 
 	.row.no-gutters {
 		flex-direction: column;
+		min-height: 0px;
 	}
 
 	#navbar {
@@ -197,6 +198,7 @@ a:focus {
 @media(min-width:768px) {
 	.row.no-gutters {
 		flex-direction: row;
+		min-height: 215px;
 	}
 
 	#banner #banner-header {
@@ -249,7 +251,6 @@ a:focus {
 	align-items: center;
 	margin-top: 1em;
 	margin-bottom: 1em;
-	min-height: 215px;
 }
 
 .row.no-gutters > [class^="col-"],
