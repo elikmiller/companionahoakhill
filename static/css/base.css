@@ -147,6 +147,11 @@ a:focus {
 /* MEDIA QUERIES */
 /* ------------- */
 @media(max-width:767px) {
+
+	.row.no-gutters {
+		flex-direction: column;
+	}
+
 	#navbar {
 		position: absolute;
 		top: 0;
@@ -190,6 +195,10 @@ a:focus {
 }
 
 @media(min-width:768px) {
+	.row.no-gutters {
+		flex-direction: row;
+	}
+
 	#banner #banner-header {
 		font-size: 10rem;
 		margin-bottom: -0.5em;
