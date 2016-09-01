@@ -278,3 +278,18 @@ a:focus {
 .shadow {
 	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
+
+.google-maps {
+    position: relative;
+    padding-bottom: 33%;
+    height: 0;
+    overflow: hidden;
+}
+
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}

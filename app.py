@@ -14,13 +14,5 @@ def our_services():
 def our_staff():
 	return render_template('our_staff.html')
 
-@app.route('/contact_us')
-def contact_us():
-	return render_template('contact_us.html')
-
-@app.route('/base')
-def base():
-	return render_template('base.html')
-
 if __name__ == '__main__':
 	app.run(debug=True)
