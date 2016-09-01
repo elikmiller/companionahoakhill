@@ -21,16 +21,18 @@
 .content-title {
 	font-family: 'Baloo Tamma', sans-serif;
 	font-size: 3em;
+	text-align: center;
 }
 
 .content-text {
 	padding-left: 2rem;
 	padding-right: 2rem;
 	height: 100%;
+	text-align: center;
 }
 
 .content-text p {
-	font-size: 125%;
+	font-size: 133%;
 }
 
 #home-nav > li > a {
@@ -50,6 +52,18 @@
 	font-family: 'Baloo Tamma', sans-serif;
 	font-size: 3em;
 	text-align: center;
+}
+
+.quote {
+}
+
+.quote-text {
+	font-size: 150% !important;
+	font-style: italic;
+}
+
+.quote-author {
+	text-align: right;
 }
 
 @media(max-width:767px) {
