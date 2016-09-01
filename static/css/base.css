@@ -168,6 +168,10 @@ a:focus {
 		font-size: 2.5rem;
 	}
 
+	.content-title {
+		font-size: 2em;
+	}
+
 	.tagline {
 		font-size: 1.5rem;
 	}
@@ -195,6 +199,10 @@ a:focus {
 		font-size: 5rem;
 	}
 
+	.content-title {
+		font-size: 2.5em;
+	}
+
 	.tagline {
 		font-size: 2rem;
 	}
@@ -219,4 +227,44 @@ a:focus {
 	.tagline {
 		font-size: 2.5rem;
 	}
+
+	.content-title {
+		font-size: 3em;
+	}
+}
+
+.row.no-gutters {
+	margin-right: 0;
+	margin-left: 0;
+	display: flex;
+	align-items: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	min-height: 215px;
+}
+
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.content-title {
+	font-family: 'Baloo Tamma', sans-serif;
+	text-align: center;
+}
+
+.content-text {
+	padding-left: 2rem;
+	padding-right: 2rem;
+	height: 100%;
+	text-align: center;
+}
+
+.content-text p {
+	font-size: 133%;
+}
+
+.shadow {
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
