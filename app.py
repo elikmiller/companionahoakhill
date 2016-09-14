@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, send_from_directory, redirect, url_for
 
 app = Flask(__name__)
 
@@ -13,6 +13,10 @@ def our_services():
 @app.route('/our_staff')
 def our_staff():
 	return render_template('our_staff.html')
+
+@app.route('/attachments/<filename>')
+def download_file(filename):
+	return redirect('static/attachments/' + filename)
 
 if __name__ == '__main__':
 	app.run(debug=True)

@@ -14,7 +14,7 @@ Home
 <div class="row">
 	<div class="col-xs-6 col-xs-offset-3 col-sm-offset-0 col-sm-12 text-center">
 		<ul id="home-nav" class="nav nav-pills nav-justified">
-			<li><a href="#">New Patients</a></li>
+			<li><a href="{{ url_for('download_file', filename='new_client_form.pdf') }}" target="_blank">New Patients</a></li>
 			<li><a href="{{ url_for('our_services') }}">Our Services</a></li>
 			<li><a href="{{ url_for('our_staff') }}">Our Staff</a></li>
 			<li><a href="http://companionanimalhospital25.vetsourcecms.com/" target="_blank">Our Store</a></li>
@@ -31,7 +31,7 @@ Home
 		</div>
 	</div>
 	<div class="hidden-xs col-sm-5">
-		<img class="img-responsive center-block shadow" src="static/img/cropped/puppy.jpg">
+		<img class="img-responsive center-block shadow" src="static/img/cropped/dog_2.jpg">
 	</div>
 </div>
 <div class="row">
@@ -99,7 +99,7 @@ Home
 				<div class="hidden-xs">Like Us!</div>
 			</a>
 		</div>
-	</div>	
+	</div>
 	<div class="col-xs-4">
 		<div id="yelp" class="social">
 			<a href="https://www.yelp.com/biz/companion-animal-hospital-austin" target="_blank">
