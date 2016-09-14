@@ -18,6 +18,11 @@
 }
 
 .quote {
+	border-style: solid;
+	border-color: white;
+	border-width: 1px 0px;
+	padding: 1em 0em;
+	margin: 1em 0em;
 }
 
 .quote-text {
