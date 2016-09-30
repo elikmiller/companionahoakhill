@@ -1,42 +1,113 @@
 {% extends "base.html" %}
+{% set active_page = "home" %}
 
 {% block title %}
-	Home
+Home
 {% endblock %}
 
-{% block jumbotron %}
-	<h2>&emsp;Welcome to</h2>
-	<h1>Companion Animal Hospital</h1>
-{% endblock %}
-
-{% block content_title %}
-	About Us
+{% block styles %}
+<link href="/static/css/home.css" rel="stylesheet" type="text/css">
 {% endblock %}
 
 {% block content_body %}
-	<div class="row">
-		<div class="col-sm-4 vertical-center">
-			<img class="center-block img-responsive" src="static/img/pet2.jpg">
-		</div>
-		<div class="col-sm-8 vertical-center">
-			<p>We are a full-service veterinary medical facility, located in Austin, Texas. Everyone at Companion Animal Hospital seeks to provide the best possible medical, surgical and dental care for our highly-valued patients.</p>
-			<p>We are committed to promoting responsible pet ownership, preventative health care and health-related educational opportunities for our clients. Not only does Companion Animal Hospital strive to offer excellence in veterinary care, but we also strive to differentiate ourselves by providing our clientele with a holistic approach to medicinal practice.</p>
-			<p>Please take a moment to contact us today to learn more about our veterinary practice and to find out more information about how Companion Animal Hospital can serve the needs of you and your cherished pet.</p>
+<div class="row">
+	<div class="col-xs-6 col-xs-offset-3 col-sm-offset-0 col-sm-12 text-center">
+		<ul id="home-nav" class="nav nav-pills nav-justified">
+			<li><a href="{{ url_for('download_file', filename='new_client_form.pdf') }}" target="_blank">New Patients</a></li>
+			<li><a href="{{ url_for('our_services') }}">Our Services</a></li>
+			<li><a href="{{ url_for('our_staff') }}">Our Staff</a></li>
+			<li><a href="http://companionanimalhospital25.vetsourcecms.com/" target="_blank">Our Store</a></li>
+			<li><a href="#contact-information">Contact Info</a></li>
+		</ul>
+	</div>
+</div>
+
+<hr>
+
+<div class="row no-gutters">
+	<div class="col-xs-12 col-sm-7">
+		<div class="content-text">
+			<div class="content-title">Welcome to Companion!</div>
+			<p>We are a full-service veterinary medical facility, located in Austin, Texas. Our staff seeks to provide the best possible medical, surgical and dental care for our highly-valued patients.</p>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-xs-12">
-			<blockquote class="blockquote">
-			  <p>Companion is the best place to take your furry friends. The doctors and staff are all so wonderful and caring. It took me a long time to find them and they are never getting rid of us! I can't recommend them highly enough. Neither can Sal or Nico.</p>
-			  <footer>Katie Jane Friedman</footer>
-			</blockquote>
-		</div>
+	<div class="hidden-xs col-sm-5">
+		<img class="img-responsive center-block shadow" src="static/img/cropped/puppy.jpg">
 	</div>
+</div>
+
+<div class="row">
 	<div class="col-xs-12">
-		<blockquote class="blockquote-reverse">
-		  <p>Excellent service. Friendly, efficient staff and reasonable prices in a comfortable atmosphere that is more "home" and less "clinic". Highly recommended.</p>
-		  <footer>Ted Smith</footer>
-		</blockquote>
+		<div class="content-text">
+			<div class="quote">
+				<p class="quote-text">"Companion is the best place to take your furry friends. The doctors and staff are all so wonderful and caring. It took me a long time to find them and they are never getting rid of us! I can't recommend them highly enough. Neither can Sal or Nico."</p>
+				<p class="quote-author">- Katie Jane Friedman</p>
+			</div>
+		</div>
 	</div>
-	<p class="lead text-center"><a href="https://www.facebook.com/CompanionAHOakHill" target="_blank">Like us on Facebook!</a></p>
+</div>
+
+<div class="row no-gutters">
+	<div class="hidden-xs col-sm-5">
+		<img class="img-responsive center-block shadow" src="static/img/cropped/cat_2.jpg">
+	</div>
+	<div class="col-xs-12 col-sm-7">
+		<div class="content-text">
+			<div class="content-title">Our Mission</div>
+			<p>We are committed to promoting responsible pet ownership, preventative health care and health-related educational opportunities for our clients. Companion Animal Hospital strives to offer the best in veterinary care and we differentiate ourselves by providing our clientele with a holistic approach to medicinal practice.</p>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-12">
+		<div class="content-text">
+			<div class="quote">
+				<p class="quote-text">"Excellent service. Friendly, efficient staff and reasonable prices in a comfortable atmosphere that is more 'home' and less 'clinic'. Highly recommended."</p>
+				<p class="quote-author">- Ted Smith</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row no-gutters">
+	<div class="col-xs-12 col-sm-7">
+		<div class="content-text">
+			<div class="content-title">We're Here to Help!</div>
+			<p>Please take a moment to contact us today. Learn more about our veterinary practice and find out how Companion Animal Hospital can serve the needs of you and your cherished pet.</p>
+		</div>
+	</div>
+	<div class="hidden-xs col-sm-5">
+		<img class="img-responsive center-block shadow" src="static/img/cropped/cats.jpg">
+	</div>
+</div>
+
+<hr>
+
+<div class="row">
+	<div class="col-xs-4">
+		<div id="facebook" class="social">
+			<a href="https://www.facebook.com/CompanionAHOakHill" target="_blank">
+				<i class="fa fa-facebook"></i>
+				<div class="hidden-xs">Like Us!</div>
+			</a>
+		</div>
+	</div>
+	<div class="col-xs-4">
+		<div id="yelp" class="social">
+			<a href="https://www.yelp.com/biz/companion-animal-hospital-austin" target="_blank">
+				<i class="fa fa-yelp"></i>
+				<div class="hidden-xs">Review Us!</div>
+			</a>
+		</div>
+	</div>
+	<div class="col-xs-4">
+		<div id="email" class="social">
+			<a href="mailto:admin@companionahoakhill.com">
+				<i class="fa fa-envelope"></i>
+				<div class="hidden-xs">Ask Us!</div>
+			</a>
+		</div>
+	</div>
+</div>
 {% endblock %}
