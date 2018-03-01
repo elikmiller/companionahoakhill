@@ -2,4 +2,7 @@
 Homepage for Companion Animal Hospital
 
 
-handcrafted by elikmiller.com
+See it live at [companionahoakhill.com](companionahoakhill.com)
+
+
+By [elikmiller.com](elikmiller.com)
